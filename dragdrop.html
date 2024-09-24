@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dragdrop.css">
+    <title>Drag&Drop💦</title>
+</head>
+<body>
+    <h1 class="main-title">Shaybah💦 board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- backlog list -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <!-- backlog contents -->
+                <div class="backlog-content custom-scroll">
+                    <ul class="drag-item-list" id="backlog-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(0)">
+                        <!-- <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li> -->
+                    </ul>
+                </div>
+                <!-- buttons -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(0)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(0)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true">
+                        
+                    </div>
+                </div>
+            </li>
+             <!-- progress container -->
+             <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <!-- progress contents -->
+                <div class="progress-content custom-scroll">
+                    <ul class="drag-item-list" id="progress-list" onondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(1)">
+                        <!-- <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li> -->
+                    </ul>
+                </div>
+                <!-- buttons -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(1)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(1)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true">
+                        
+                    </div>
+                </div>
+            </li>
+             <!-- complete list -->
+             <li class="drag-column complete-column">
+                <span class="header">
+                    <h1>Complete</h1>
+                </span>
+                <!-- complete contents -->
+                <div class="complete-content custom-scroll">
+                    <ul class="drag-item-list" id="complete-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(2)">
+                        <!-- <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li> -->
+                    </ul>
+                </div>
+                <!-- buttons -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(2)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(2)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true">
+                        
+                    </div>
+                </div>
+            </li>
+             <!-- on-hold list -->
+             <li class="drag-column on-hold-column">
+                <span class="header">
+                    <h1>On-hold</h1>
+                </span>
+                <!-- on-hold contents -->
+                <div class="on-hold-content custom-scroll">
+                    <ul class="drag-item-list" id="on-hold-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(3)">
+                        <!-- <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+
+
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li><li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li> -->
+                    </ul>
+                </div>
+                <!-- buttons -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(3)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(3)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true">
+                        
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+<script src="./dragdrop.js"></script>
+</html>
